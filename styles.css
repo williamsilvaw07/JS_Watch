@@ -1,0 +1,264 @@
+
+.menu {
+    position: relative;
+    left: 17%;
+    bottom: 95px;
+
+
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    z-index: 99;
+    color: red
+}
+
+.menu span {
+    position: absolute;
+    height: 2px;
+    width: 35px;
+    background-color: #F23814;
+    top: 7%;
+    left: 80%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.menu span:before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    background-color: #F23814;
+    height: 2px;
+    width: 25px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+
+
+
+.menu span:after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    background-color: #F23814;
+    height: 2px;
+    width: 45px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.menu.active span {
+    background-color: transparent;
+}
+
+.menu.active span:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 0;
+    width: 45px;
+}
+
+.menu.active span:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+
+body{
+  background-color: #f0b50c;
+    font-family: 'Lato', sans-serif;
+
+}
+
+
+
+
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+
+
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+
+
+}
+
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+
+  right: 5px;
+  font-size: 60px;
+            float: left;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+
+  }
+}
+
+
+
+
+
+
+    .time{
+    font-size: 600%;
+    text-align: center;
+        margin-top: 15%;
+        font-weight: 600;
+          text-shadow: -4px -16px 13px #000;
+}
+
+.color_button{
+position: absolute;
+    right: 2%;
+    top: 2%;
+
+
+}
+
+
+.button_t{
+    padding: 15px 15px 15px 15px;
+    font-size: 100%;
+    cursor: pointer;
+    border: 2px solid black;
+    	display: inline-block;
+	-webkit-transition-duration: $defaultDuration;
+	transition-duration: $defaultDuration;
+	-webkit-transition-property: -webkit-transform;
+	transition-property: -webkit-transform;
+	transition-property: transform;
+	transition-property: transform, -webkit-transform;
+background-color: transparent;
+    font-weight: bolder;
+    font-family: 'Lato', sans-serif;
+border-radius: 10px;
+       -webkit-transition: -webkit-transform 0.7s;
+       transition: -webkit-transform 0.7s;
+       transition: transform 0.7s;
+       transition: transform 0.7s, -webkit-transform 0.7s;
+
+}
+
+.button_t:hover{
+    -webkit-transform: scale(1.4) rotate(7deg);
+    transform: scale(1.1) ;
+
+    -webkit-transition: 0.7s;
+
+    transition: 0.7s;
+    text-shadow: 4px
+}
+
+
+
+
+
+.buttons_watch
+{
+    text-align: center;
+
+}
+
+
+.button_start , .button_reset{
+    padding:  10px 50px 10px 50px;
+    border-radius: 10px;
+
+    border: 2px solid black;
+background-color: transparent;
+    font-weight: bolder;
+    font-family: 'Lato', sans-serif;
+        font-size: 100%;
+    -webkit-transition: -webkit-transform 0.7s;
+    transition: -webkit-transform 0.7s;
+    transition: transform 0.7s;
+    transition: transform 0.7s, -webkit-transform 0.7s;
+
+
+
+}
+
+
+
+.first_button{
+
+display: inline-block;
+    margin-right: 5%
+
+
+
+}
+
+.second_button{
+display: inline-block;
+    margin-left: 5%;
+
+}
+
+
+
+
+.button_start:hover{
+    -webkit-transition: all 0.5s ;
+ transition: all 0.5s ;
+  -webkit-transform: scale(1.4);
+  transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+
+.button_reset:hover{
+-webkit-transition: all 0.5s ;
+ transition: all 0.5s ;
+  -webkit-transform: scale(1.4);
+  transform: scale(1.2);
+    cursor: pointer;
+
+}
